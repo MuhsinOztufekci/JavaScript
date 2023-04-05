@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr-Tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript" language="javascript">
+      // Uzunluk bulma
+      var isim = "Muhsin";
+      document.writeln(isim.length + "<br>");
+
+      // Bir sayıyı bazı string işlemlerine tabi tuttuktan sonra onu tekrardan int olarak algılatmak istersek eval() operatörünü kullanırız.
+      // Eval operatörünün güvenlik açıkları vardır tavsiye edilmez.
+      var sayi1 = 16;
+      var sayi2 = 14;
+
+      var sonuc = eval('sayi1 + sayi2');
+      document.writeln(sonuc);
+
+      // Trim başındaki ve sonundaki boşlukları siler.
+      var islem = isim.trim();
+
+
+      // Slice parametre verilmezse hepsini değişkenin hepsini yazar 
+      // Parametre ile belirtilen indexler arasındaki yazıyı alır.
+
+      var islem = isim.slice(3);
+      // Cevap "sin" yani ilk baştaki 3 harfi sildi gerisini aldı.
+      document.writeln("<br>");
+      document.writeln(islem);
+
+      var islem = isim.slice(1,4);
+      // Cevap "uhs" Muhsin yani 1. harfi sildi 4 e (dikkat 4 dahil) kadar aldı gerisini sildi.
+      document.writeln("<br>");
+      document.writeln(islem);
+
+    </script>
+  </body>
+</html>
